@@ -1,0 +1,94 @@
+# Database Configuration (contains sensitive credentials)
+config/database.php
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Composer Dependencies
+/vendor/
+composer.phar
+composer.lock
+
+# Log Files
+*.log
+logs/
+*.sql.log
+
+# Temporary Files
+*.tmp
+*.temp
+*.cache
+/tmp/
+/temp/
+
+# Session Files
+/sessions/
+*.sess
+
+# Backup Files
+*.bak
+*.backup
+*.old
+*.orig
+
+
+# Cache Directories
+/cache/*
+!/cache/.gitkeep
+
+# Build Files
+/build/
+/dist/
+
+
+# System Files
+*.pid
+*.seed
+*.pid.lock
+
+# Security Files (keys, certificates, credentials)
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+credentials.json
+secrets.json
+
+# Database Dumps and Backups
+*.sql
+*.sqlite
+*.db
+/backups/
+
+
+
+# Windows
+[Tt]humbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
