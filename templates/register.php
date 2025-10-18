@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - Login System</title>
     <link rel="stylesheet" href="../assets/styles.css">
+    <style> .form-group{ margin-top: 0.5rem; }</style>
     <script defer src="../assets/validation.js"></script>
 </head>
 <body id="register">

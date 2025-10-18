@@ -60,7 +60,8 @@ body#home .btn { padding: 1rem 2rem; margin: 0.5rem; }
 body#login .btn, body#register .btn { width: 100%; }
 
 /* Forms */
-label { display: block; margin-bottom: 0.5rem; color: #555; font-weight: bold; }
+label { display: block; margin-bottom: 0.5rem; margin-top: 2rem; color: #555; font-weight: bold; }
+label:first-of-type { margin-top: 0; }
 input[type="text"], input[type="email"], input[type="password"] {
     width: 100%;
     padding: 0.75rem;
@@ -72,6 +73,10 @@ input[type="text"], input[type="email"], input[type="password"] {
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus { outline: none; border-color: blue; }
+
+/* Register and Login page specific styles */
+body#register .btn,
+body#login .btn { margin-top: 1.5rem; }
 
 /* Alerts */
 .error { background: #f8d7da; color: #721c24; padding: 0.75rem; border-radius: 5px; margin-bottom: 1rem; border: 1px solid #f5c6cb; }
@@ -108,7 +113,7 @@ body#dashboard .detail-item { padding: 1rem; background: #f8f9fa; border-radius:
 body#dashboard .detail-label { font-weight: bold; color: #555; margin-bottom: 0.5rem; }
 body#dashboard .detail-value { color: #333; overflow-wrap: anywhere; }
 body#dashboard .user-details .detail-item:nth-child(2) { grid-column: span 2; }
-body#dashboard .actions { margin-top: 2rem; }
+body#dashboard .actions { margin-top: 2rem; display: flex; gap: 2rem; }
 body#dashboard .btn { padding: 0.75rem 1.5rem; border-radius: 5px; }
 body#dashboard .btn-primary { background: blue; color: #ffffff; }
 body#dashboard .btn-secondary { background: #6c757d; color: #ffffff; }
