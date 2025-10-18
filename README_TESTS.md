@@ -68,11 +68,17 @@ composer install
 ### 3. Configure Database
 Update `phpunit.xml` with your MySQL credentials if different from defaults:
 - DB_HOST: localhost
-- DB_NAME: login_system_test
-- DB_USER: root
-- DB_PASS: shadrack21
+- DB_NAME: your_test_db_name
+- DB_USER: root //change to your user
+- DB_PASS: your_MYSQL_password
 
 ## Running Tests
+
+### Run Automated Tests
+To run all automated tests quickly, use the test runner script:
+```bash
+php run_tests.php
+```
 
 ### Run All Tests
 ```bash
