@@ -2,9 +2,9 @@
 
 A complete, enterprise-grade PHP login system with MySQL database integration, featuring the most advanced password hashing algorithm (Argon2id), secure authentication, user registration, and a modern responsive design.
 
-## 🎓 Assignment Compliance
+## Assignment
 
-**This project fully meets all academic assignment requirements:**
+**This project fully meets assignment requirements:**
 
 ✅ **Required Functions Implemented:**
 - `createUser(username, password)` - `src/Auth/AuthService.php:103`
