@@ -17,7 +17,8 @@ class AuthServiceTest extends TestCase
 
         // Get PDO from container
         $this->pdo = Container::get('pdo');
-        $this->authService = new AuthService();
+        // Use Singleton pattern to get AuthService instance
+        $this->authService = AuthService::getInstance();
 
         // Clean up test data before each test
         $this->cleanDatabase();

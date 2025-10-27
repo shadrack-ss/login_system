@@ -124,7 +124,7 @@ echo "\n";
 
 // Test 1: Successful login with valid credentials
 runTest("Successful Login with Valid Credentials", function() use ($test_pdo) {
-    $auth = new AuthService();
+    $auth = AuthService::getInstance();
 
     // Arrange: Create a test user
     $username = 'testuser';
@@ -147,7 +147,7 @@ runTest("Successful Login with Valid Credentials", function() use ($test_pdo) {
 
 // Test 2: Unsuccessful login with incorrect password
 runTest("Unsuccessful Login with Incorrect Password", function() use ($test_pdo) {
-    $auth = new AuthService();
+    $auth = AuthService::getInstance();
 
     // Arrange: Create a test user
     $username = 'testuser';
@@ -168,7 +168,7 @@ runTest("Unsuccessful Login with Incorrect Password", function() use ($test_pdo)
 
 // Test 3: Unsuccessful login with nonexistent username
 runTest("Unsuccessful Login with Nonexistent Username", function() use ($test_pdo) {
-    $auth = new AuthService();
+    $auth = AuthService::getInstance();
 
     // Act: Attempt to login with a username that doesn't exist
     $user = $auth->findUserByUsernameOrEmail('nonexistentuser');
@@ -179,7 +179,7 @@ runTest("Unsuccessful Login with Nonexistent Username", function() use ($test_pd
 
 // Test 4: Successful login after creating new user
 runTest("Successful Login After Creating New User", function() use ($test_pdo) {
-    $auth = new AuthService();
+    $auth = AuthService::getInstance();
 
     // Arrange & Act: Create a new user
     $username = 'newuser';
@@ -204,7 +204,7 @@ runTest("Successful Login After Creating New User", function() use ($test_pdo) {
 
 // Test 5: Unsuccessful login with empty password
 runTest("Unsuccessful Login with Empty Password", function() use ($test_pdo) {
-    $auth = new AuthService();
+    $auth = AuthService::getInstance();
 
     // Arrange: Try to create a user with empty password
     $username = 'testuser';
@@ -238,7 +238,7 @@ runTest("Unsuccessful Login with Empty Password", function() use ($test_pdo) {
 
 // Test 6: Username uniqueness
 runTest("Username Uniqueness", function() use ($test_pdo) {
-    $auth = new AuthService();
+    $auth = AuthService::getInstance();
 
     // Arrange: Create first user
     $username = 'testuser';
@@ -260,7 +260,7 @@ runTest("Username Uniqueness", function() use ($test_pdo) {
 
 // Test 7: Secure password storage (Argon2id)
 runTest("Secure Password Storage (Argon2id)", function() use ($test_pdo) {
-    $auth = new AuthService();
+    $auth = AuthService::getInstance();
 
     // Arrange & Act: Create a user
     $username = 'testuser';

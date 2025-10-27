@@ -3,7 +3,7 @@ require_once __DIR__ . '/../bootstrap.php';
 use App\Core\Renderer;
 use App\Auth\AuthService;
 
-$auth = new AuthService();
+$auth = AuthService::getInstance();
 $error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
